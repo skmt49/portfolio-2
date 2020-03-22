@@ -1,0 +1,183 @@
+.header-container{
+  height: 74px;
+  display: flex;
+  color: #fff;
+}
+
+.menu-btn{
+  display: none;
+}
+
+.logo{
+  margin: 0;
+  font-size: 1.85rem;
+  margin-left: 8.57rem;
+  line-height: 74px;
+}
+
+.header-list{
+  display: flex;
+  margin: 0 8.57rem 0 auto;
+}
+
+.header-list-cell{
+  font-size: 1.14rem;
+  line-height: 74px;
+  padding: 0 1.6rem;
+}
+
+.bg-slider{
+  width: 100%;
+  height: 752px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .8s;
+}
+
+.contact-bg{
+  width: 100%;
+  height: 453px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/contact-page-bg.jpg);
+}
+
+.contact-title{
+  color: #fff;
+}
+
+.contact-title p{
+  font-size: 3.8rem;
+  margin-top: 6.8rem;
+  text-align: center;
+}
+
+.motto{
+  margin-top: 25.28rem;
+}
+
+.en-motto{
+  color: #fff;
+  font-size: 5rem;
+  margin-left: 8.57rem;
+}
+
+.ja-motto{
+  color: #fff;
+  font-size: 2.4rem;
+  margin-left: 11.42rem;
+}
+
+@media screen and (max-width:375px) {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .menu-btn span {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+
+  .top {
+    top: 10px;
+  }
+
+  .middle {
+    top: 20px;
+  }
+
+  .bottom {
+    bottom: 7px;
+  }
+
+  .menu-btn-close {
+	  width: 100vw;
+	  height: 75px;
+	  position: relative;
+  }
+
+.menu-btn-close span::before,
+.menu-btn-close span::after {
+  cursor: pointer;
+	display: block;
+	content: "";
+	position: absolute;
+	top: 2rem;
+	right: 1rem;
+	width: 2rem;
+	height: 0.4rem;
+	background: #fff;
+}
+
+.menu-btn-close span::before {
+	transform: rotate(-45deg);
+}
+.menu-btn-close span::after {
+	transform: rotate(45deg);
+}
+
+  .header-list{
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 812px;
+    position: absolute;
+    top: 0px;
+    left: 100vw;
+    background: #000;
+    transition: .8s;
+  }
+
+  .menu-open .header-list{
+    display: block;
+     left: 0;
+  }
+
+  .logo{
+    margin-left: 1rem;
+  }
+
+  .bg-slider{
+    height: 599px;
+  }
+
+  .motto{
+    margin-top: 9.71rem;
+  }
+
+  .ja-motto{
+    font-size: 1.87rem;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 3.31rem;
+  }
+
+  .ja-motto span:before{
+    content: "\A" ;
+  white-space: pre ;
+  }
+
+  .en-motto{
+    font-size: 2.31rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact-title p{
+    font-size: 2.3rem;
+    margin-top: 7.2rem;
+  }
+
+}
