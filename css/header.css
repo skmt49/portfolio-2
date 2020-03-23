@@ -1,3 +1,9 @@
+html, body{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .header-container{
   height: 74px;
   display: flex;
