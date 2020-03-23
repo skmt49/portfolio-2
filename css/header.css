@@ -129,7 +129,7 @@
 }
 
   .header-list{
-    display: none;
+      visibility: hidden;
     flex-direction: column;
     width: 100vw;
     height: 812px;
@@ -141,7 +141,7 @@
   }
 
   .menu-open .header-list{
-    display: block;
+      visibility: visible;
      left: 0;
   }
 
